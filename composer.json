@@ -1,0 +1,30 @@
+{
+    "name": "asgrim/quality-tutorial",
+    "description": "Sample code and exercises for my quality PHP workshop",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James Titcumb",
+            "email": "james@asgrim.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "behat/behat": "^3.4",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Asgrim\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AsgrimUnitTest\\": "test/unit",
+            "AsgrimBehaviourTest\\": "feature/bootstrap"
+        }
+    }
+}
