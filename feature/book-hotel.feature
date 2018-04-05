@@ -5,7 +5,7 @@ Feature: Booking a room for a hotel
    - Charge/Charged: where money has been taken from the payment card to the business
    - Refund/Refunded: where money has been sent back to the payment card from the business
    - Room: the subject of the booking
-   - Booking/Booked: a confirmed reservation of a room that has been paid for
+   - Booking/Booked/Reservation: a confirmed reservation of a room that has been paid for
 
   Policies:
    - All rooms must be paid in advance
