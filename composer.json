@@ -24,7 +24,8 @@
             "Asgrim\\": "src/",
             "Exercises\\One\\": "exercises/1-object-calisthenics",
             "Exercises\\Two\\": "exercises/2-leveraging-types",
-            "Exercises\\Three\\": "exercises/3-phpstan"
+            "Exercises\\Three\\": "exercises/3-simple-domain-implementation",
+            "Exercises\\Four\\": "exercises/4-phpstan"
         }
     },
     "autoload-dev": {
