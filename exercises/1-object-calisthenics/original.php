@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Exercises;
+namespace Exercises\One;
 
 use Assert\Assert;
 
