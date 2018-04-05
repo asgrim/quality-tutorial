@@ -1,7 +1,6 @@
 # Background knowledge
 
  - `HttpClient` is just a placeholder for guzzle or something
- - Indentation / avoiding `else` combined
 
 # Things to improve
 
