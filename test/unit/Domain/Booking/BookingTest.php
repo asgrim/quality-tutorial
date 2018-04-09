@@ -11,7 +11,7 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * Intentionally broken annotation:
- * covers \Asgrim\Domain\Booking\Booking
+ * @covers \Asgrim\Domain\Booking\Booking
  */
 final class BookingTest extends TestCase
 {
@@ -20,11 +20,12 @@ final class BookingTest extends TestCase
      */
     public function testFromSelectedDates() : void
     {
-        $booking = Booking::fromSelectedDates(DateSelection::between(
+        $dateSelection = DateSelection::between(
             new DateTimeImmutable('now +2 days', new DateTimeZone('UTC')),
             new DateTimeImmutable('now +4 days', new DateTimeZone('UTC'))
-        ));
+        );
+        $booking = Booking::fromSelectedDates($dateSelection);
 
-        // stuff
+        self::assertAttributeSame($dateSelection, 'dates', $booking);
     }
 }

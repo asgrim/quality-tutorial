@@ -32,7 +32,6 @@
             "Exercises\\Four\\": "exercises/4-phpstan",
             "Exercises\\Five\\": "exercises/5-testing-legacy-code",
             "Exercises\\Six\\": "exercises/6-branch-coverage",
-            "Exercises\\Seven\\": "exercises/7-coverage-leaking",
             "Exercises\\Eight\\": "exercises/8-infection/src"
         }
     },
