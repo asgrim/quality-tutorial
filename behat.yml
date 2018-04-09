@@ -1,0 +1,19 @@
+default:
+  suites:
+    domain:
+      contexts:
+        - AsgrimBehaviourTest\BookHotelDomainContext
+      filters:
+        tags: '@domain'
+    ui:
+      contexts:
+        - AsgrimBehaviourTest\BookHotelUiContext
+      filters:
+        tags: '@ui'
+
+  extensions:
+    Behat\MinkExtension:
+      base_url: 'https://hotel-booking-system-url/'
+      sessions:
+        default:
+          selenium2: ~

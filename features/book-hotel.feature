@@ -13,6 +13,7 @@ Feature: Booking a room for a hotel
    - Rooms must be available to be booked
    - Room Availability is determined by an external system (e.g. via an API)
 
+  @ui @domain
   Scenario: Making a successful booking
     Given there is a room available for £100 per night
     When I select an available room for 3 nights

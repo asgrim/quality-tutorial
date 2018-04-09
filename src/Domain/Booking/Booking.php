@@ -6,7 +6,9 @@ namespace Asgrim\Domain\Booking;
 use Asgrim\Domain\Payment\CompletedPayment;
 use Asgrim\Domain\Payment\PaymentGateway;
 use Asgrim\Domain\Payment\PendingPayment;
+use Asgrim\Domain\Reservation\ConfirmedReservationId;
 use Asgrim\Domain\Reservation\Reservations;
+use Assert\Assert;
 
 final class Booking
 {
@@ -44,6 +46,7 @@ final class Booking
 
     public function reserveRoom(Reservations $reservations) : void
     {
+        Assert::that($this->pendingPayment)->isInstanceOf(PendingPayment::class);
         $this->confirmedReservationId = $reservations->requestReservation($this->dates);
     }
 
@@ -53,6 +56,8 @@ final class Booking
 
     public function completePayment(PaymentGateway $paymentGateway) : void
     {
+        Assert::that($this->pendingPayment)->isInstanceOf(PendingPayment::class);
+        Assert::that($this->confirmedReservationId)->isInstanceOf(ConfirmedReservationId::class);
         $this->completedPayment = $paymentGateway->completePayment($this->pendingPayment);
     }
 }
