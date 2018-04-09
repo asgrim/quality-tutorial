@@ -1,0 +1,14 @@
+{
+    "timeout": 10,
+    "source": {
+        "directories": [
+            "exercises/8-infection/src"
+        ]
+    },
+    "logs": {
+        "text": "infection-log.txt"
+    },
+    "phpUnit": {
+        "configDir": "exercises/8-infection"
+    }
+}
