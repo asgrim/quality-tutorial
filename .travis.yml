@@ -1,0 +1,29 @@
+language: php
+
+before_script:
+  - composer install --prefer-dist
+
+jobs:
+  include:
+    - stage: Run unit tests
+      php: 7.1
+      script:
+        - vendor/bin/phpunit
+
+    - stage: Static analysis
+      php: 7.1
+      script:
+        - vendor/bin/phpstan analyse --level 7 src
+
+    - stage: Check CS
+      php: 7.1
+      script:
+        - vendor/bin/phpcs
+
+    - stage: Upload Coverage
+      php: 7.1
+      before_script:
+        - wget https://scrutinizer-ci.com/ocular.phar
+      script:
+        - vendor/bin/phpunit --coverage-text --coverage-clover=clover.xml
+        - php ocular.phar code-coverage:upload --format=php-clover clover.xml

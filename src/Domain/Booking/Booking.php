@@ -24,7 +24,7 @@ final class Booking
     /** @var CompletedPayment */
     private $completedPayment;
 
-    /** @var  */
+    /** @var ConfirmedReservationId */
     private $confirmedReservationId;
 
     private function __construct()
