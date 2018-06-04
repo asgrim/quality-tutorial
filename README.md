@@ -24,6 +24,7 @@ Requirements:
  - Planning 1h 30m (09:30)
    - Planning techniques / event storming practical
    - Write feature files with Gherkin
+   - Estimation
  - Development 1h 30m (11:00)
    - Object Calisthenics (ex 1)
    - Types (ex 2)
