@@ -8,3 +8,5 @@ Some suggestions:
  - https://github.com/doctrine/migrations/pull/715 - DOCS! :)
  - https://github.com/nikolaposa/version/pull/18
  - https://github.com/DashboardHub/PipelineDashboard/pulls
+ - https://github.com/jakzal/phpqa/pulls
+ - https://github.com/joomla/joomla-cms/pulls
