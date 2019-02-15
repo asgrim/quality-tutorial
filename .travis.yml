@@ -1,13 +1,11 @@
 language: php
 
-before_script:
-  - composer install --prefer-dist
-
 jobs:
   include:
     - stage: Run unit tests
       php: 7.3
       before_script:
+        - composer install --prefer-dist
         - ln -s ../handbook/3-simple-domain-implementation/Domain Domain
       script:
         - vendor/bin/phpunit
