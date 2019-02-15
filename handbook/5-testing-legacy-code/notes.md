@@ -2,6 +2,8 @@
 
 ## Mocking functions
 
+NOTE: exercise is broken - depends on https://github.com/php-mock/php-mock-phpunit/pull/31
+
  * https://github.com/php-mock/php-mock-phpunit
 
 ## Mocking die/exit
