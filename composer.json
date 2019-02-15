@@ -12,6 +12,7 @@
     "require": {
         "php": "^7.2",
         "ext-json": "*",
+        "ext-xdebug": "*",
         "ramsey/uuid": "^3.8",
         "beberlei/assert": "^3.2",
         "symfony/process": "^4.2"
