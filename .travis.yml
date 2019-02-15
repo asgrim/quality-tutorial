@@ -8,7 +8,7 @@ jobs:
     - stage: Run unit tests
       php: 7.3
       before_script:
-        - cp -avf handbook/3-simple-domain-implementation/Domain src/
+        - ln -s ../handbook/3-simple-domain-implementation/Domain Domain
       script:
         - vendor/bin/phpunit
 

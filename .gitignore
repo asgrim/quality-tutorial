@@ -2,3 +2,4 @@
 infection-log.txt
 infection.json
 /**/.phpunit.result.cache
+src/Domain
