@@ -8,4 +8,9 @@ final class PendingPayment
     private function __construct()
     {
     }
+
+    public static function new()
+    {
+        return new self();
+    }
 }

@@ -1,3 +1,4 @@
 /vendor/
 infection-log.txt
 infection.json
+/**/.phpunit.result.cache

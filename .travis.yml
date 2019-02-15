@@ -6,22 +6,24 @@ before_script:
 jobs:
   include:
     - stage: Run unit tests
-      php: 7.1
+      php: 7.3
+      before_script:
+        - cp -avf handbook/3-simple-domain-implementation/Domain src/
       script:
         - vendor/bin/phpunit
 
     - stage: Static analysis
-      php: 7.1
+      php: 7.3
       script:
         - vendor/bin/phpstan analyse --level 7 src
 
     - stage: Check CS
-      php: 7.1
+      php: 7.3
       script:
         - vendor/bin/phpcs
 
     - stage: Upload Coverage
-      php: 7.1
+      php: 7.3
       before_script:
         - wget https://scrutinizer-ci.com/ocular.phar
       script:

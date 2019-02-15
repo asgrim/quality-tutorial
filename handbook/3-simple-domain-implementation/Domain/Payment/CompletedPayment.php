@@ -14,8 +14,7 @@ final class CompletedPayment
     public static function fromPendingPaymentAndPaymentResult(
         PendingPayment $pendingPayment,
         PaymentResult $someResult
-    ) : self
-    {
+    ) : self {
         $instance = new self();
         $instance->paymentId = $someResult->paymentId();
         return $instance;

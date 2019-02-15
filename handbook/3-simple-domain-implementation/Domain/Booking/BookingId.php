@@ -31,6 +31,6 @@ final class BookingId
 
     public function __toString() : string
     {
-        return (string)$this->id;
+        return $this->id->toString();
     }
 }
