@@ -5,8 +5,8 @@ jobs:
     - stage: Run unit tests
       php: 7.3
       before_script:
+        - ln -s ../handbook/3-simple-domain-implementation/Domain src/Domain
         - composer install --prefer-dist
-        - ln -s ../handbook/3-simple-domain-implementation/Domain Domain
       script:
         - vendor/bin/phpunit
 
