@@ -1,6 +1,6 @@
 <?php
 
-namespace Exercises\Four;
+namespace Exercises\Three;
 
 class a
 {

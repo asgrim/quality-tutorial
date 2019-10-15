@@ -38,8 +38,8 @@
             "Asgrim\\": "src/",
             "Exercises\\One\\": "exercises/1-object-calisthenics",
             "Exercises\\Two\\": "exercises/2-leveraging-types",
-            "Exercises\\Three\\": "exercises/3-simple-domain-implementation",
-            "Exercises\\Four\\": "exercises/4-phpstan",
+            "Exercises\\Four\\": "exercises/4-simple-domain-implementation",
+            "Exercises\\Three\\": "exercises/3-static-analysis",
             "Exercises\\Five\\": "exercises/5-testing-legacy-code/src",
             "Exercises\\Six\\": "exercises/6-branch-coverage",
             "Exercises\\Eight\\": "exercises/8-infection/src"
