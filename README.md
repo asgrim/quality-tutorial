@@ -17,18 +17,30 @@ Requirements:
 
  * Copy the folder, hopefully everything will work for you! :)
 
-# PHP UK Mini Workshop (2h)
+# php\[world\] Training (8h)
 
- - Intro 15m (10:15-10:30)
- - Planning 30m (10:30-11:00)
-   - 09:45 - Planning techniques - 15m
-   - 10:15 - Write feature files with Gherkin 15m
- - Development 40m (11:00-11:40)
-   - 10:35 - Object Calisthenics (ex 1) - 30m
-   - 11:35 - phpstan / static analysis (ex 4) - 10m
- - Testing 30m (11:40-12:10)
-   - 11:45 - Branch coverage (ex 6) - 15m
-   - 12:00 - Mutation testing (ex 8) - 15m
- - Code Review / Finish 20m (12:10-12:30)
-   - 12:15 - What do we look out for? - 10m
-   - 12:30 - Close up - 10m
+ - 09:00 : Intro - 15m
+ - Planning
+   - 09:15 : Event storming practical - 45m
+   - 10:00 : Feature description practical - 45m
+ - 10:45 : Break - 15m
+ - Development
+   - 11:00 : Object Calisthentics (ex 1) - 30m
+   - 11:30 : Types & Value objects (ex 2) - 30m
+   - 12:00 : Static Analysis (ex 3) - 15m
+   - 12:15 : Implement the Hotel Domain (ex 4) - 15m
+ - 12:30 : Lunch - 30m
+ - Development
+   - 13:00 : Implement the Hotel Domain, continued (ex 4) - 45m
+ - Testing
+   - 13:45 : Testing legacy code (ex 5) - 15m
+   - 14:00 : Branch coverage (ex 6) - 15m
+   - 14:15 : Coverage leaking (ex 7) - 15m
+   - 14:30 : Mutation testing (ex 8) - 15m
+   - 15:00 : Test your domain with feature description - 45m
+ - 15:45 : Code Review - 45m
+   - What do we look for?
+   - Find an OSS PR and review it!
+ - 16:30 : Deployment (ex 9) - 15m
+   - Heroku
+ - 16:45 : Outro/Questions - 15m
