@@ -14,7 +14,9 @@
      - `errorBaseline="psalm-baseline.xml"` to XML
      - `vendor/bin/psalm --set-baseline=psalm-baseline.xml`
      - `vendor/bin/psalm --update-baseline` each time you improve the codebase
-   * HTML output <https://github.com/Roave/psalm-html-output>
+   * HTML output - <https://github.com/Roave/psalm-html-output>
+     - `vendor/bin/psalm --output-format=xml | docker run --rm -i psalm-html-output:latest > psalm-report.html`
+     - <file:///home/james/workspace/quality-tutorial/psalm-report.html>
 
 # Recommendations
 

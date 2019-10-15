@@ -1,0 +1,189 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Psalm Report</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/plugins/line-numbers/prism-line-numbers.min.css" rel="stylesheet">
+<style>
+                    html {
+                        font-family: sans-serif;
+                    }
+                    pre > code.language-php {
+                      font-size: 1em;
+                    }
+                    code[class*="language-"] .psalm-errored-code {
+                        background-color: #ce5353;
+                        color: white;
+                        text-shadow: none;
+                    }
+                    ul.tags {
+                        padding: 0;
+                        margin: 0;
+                        font-size: 0.9em;
+                    }
+                    ul.tags li {
+                        display: inline;
+                        background-color: #e5e6d9;
+                        padding: 3px 5px;
+                        border-radius: 5px;
+                        text-shadow: 0 1px white;
+                        margin-right: 10px;
+                    }
+                    .severity {
+                        text-transform: lowercase;
+                    }
+                    .severity.error {
+                        color: #ff0000;
+                    }
+                    .severity.warning {
+                        color: #ff6e00;
+                    }
+                    .severity.info {
+                        color: #0079ff;
+                    }
+                    ul#psalmErrors li.hidden {
+                        display: none;
+                    }
+                </style>
+</head>
+<body>
+<form><label><select class="filterable" data-filter-type="severity"><option value="">-- show all --</option></select><select class="filterable" data-filter-type="psalm-type"><option value="">-- show all --</option></select></label></form>
+<ul id="psalmErrors">
+  <li data-severity="error" data-psalm-type="MissingPropertyType">
+<h3>exercises/3-static-analysis/a.php:12</h3>
+<ul class="tags">
+<li class="severity error">error</li>
+<li>MissingPropertyType</li>
+</ul>
+<p>Property Exercises\Four\a::$a does not have a declared type - consider array{a: string}</p>
+<pre data-start="12" class="line-numbersx"><code class="language-php">    private /**##(##**/$a/**##)##**/ = [</code></pre>
+</li>
+  <li data-severity="error" data-psalm-type="DuplicateArrayKey">
+<h3>exercises/3-static-analysis/a.php:14</h3>
+<ul class="tags">
+<li class="severity error">error</li>
+<li>DuplicateArrayKey</li>
+</ul>
+<p>Key 'a' already exists on array</p>
+<pre data-start="14" class="line-numbersx"><code class="language-php">        /**##(##**/'a' =&gt; 'b'/**##)##**/,</code></pre>
+</li>
+  <li data-severity="error" data-psalm-type="MissingReturnType">
+<h3>exercises/3-static-analysis/a.php:17</h3>
+<ul class="tags">
+<li class="severity error">error</li>
+<li>MissingReturnType</li>
+</ul>
+<p>Method Exercises\Four\a::foo does not have a return type, expecting void</p>
+<pre data-start="17" class="line-numbersx"><code class="language-php">    public function /**##(##**/foo/**##)##**/(string $a) {</code></pre>
+</li>
+  <li data-severity="error" data-psalm-type="PossiblyNullReference">
+<h3>exercises/3-static-analysis/a.php:18</h3>
+<ul class="tags">
+<li class="severity error">error</li>
+<li>PossiblyNullReference</li>
+</ul>
+<p>Cannot call method foo on possibly null value</p>
+<pre data-start="18" class="line-numbersx"><code class="language-php">        $this-&gt;callable-&gt;/**##(##**/foo/**##)##**/($a);</code></pre>
+</li>
+  <li data-severity="error" data-psalm-type="InvalidScalarArgument">
+<h3>exercises/3-static-analysis/a.php:18</h3>
+<ul class="tags">
+<li class="severity error">error</li>
+<li>InvalidScalarArgument</li>
+</ul>
+<p>Argument 1 of Exercises\Four\b::foo expects int, string provided</p>
+<pre data-start="18" class="line-numbersx"><code class="language-php">        $this-&gt;callable-&gt;foo(/**##(##**/$a/**##)##**/);</code></pre>
+</li>
+  <li data-severity="error" data-psalm-type="MissingReturnType">
+<h3>exercises/3-static-analysis/a.php:24</h3>
+<ul class="tags">
+<li class="severity error">error</li>
+<li>MissingReturnType</li>
+</ul>
+<p>Method Exercises\Four\b::foo does not have a return type, expecting void</p>
+<pre data-start="24" class="line-numbersx"><code class="language-php">    public function /**##(##**/foo/**##)##**/(int $a) {}</code></pre>
+</li>
+  <li data-severity="error" data-psalm-type="TooManyArguments">
+<h3>exercises/3-static-analysis/a.php:29</h3>
+<ul class="tags">
+<li class="severity error">error</li>
+<li>TooManyArguments</li>
+</ul>
+<p>Too many arguments for method Exercises\Four\a::foo - expecting 1 but saw 2</p>
+<pre data-start="29" class="line-numbersx"><code class="language-php">$a-&gt;/**##(##**/foo/**##)##**/(123, 'foo');</code></pre>
+</li>
+  <li data-severity="error" data-psalm-type="InvalidScalarArgument">
+<h3>exercises/3-static-analysis/a.php:29</h3>
+<ul class="tags">
+<li class="severity error">error</li>
+<li>InvalidScalarArgument</li>
+</ul>
+<p>Argument 1 of Exercises\Four\a::foo expects string, int(123) provided</p>
+<pre data-start="29" class="line-numbersx"><code class="language-php">$a-&gt;foo(/**##(##**/123/**##)##**/, 'foo');</code></pre>
+</li>
+</ul>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-markup-templating.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-php.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/plugins/line-numbers/prism-line-numbers.min.js"></script><script type="text/javascript">
+                
+                    Prism.hooks.add('before-insert', function(env) {
+                        const magicTagMatch = /\/\*\*##\(##\*\*\/([\w\W]*)\/\*\*##\)##\*\*\//gs;
+                        const matchedCodeToBecomeRed = magicTagMatch.exec(env.highlightedCode);
+                        let codeToBecomeRed = matchedCodeToBecomeRed[1];
+
+                        // Fairly naive assumption that PrismJS only uses </span> and <span class="..."> to highlight...
+                        codeToBecomeRed = codeToBecomeRed.replace(/(<\/span>)/g, '</span>$1');
+                        codeToBecomeRed = codeToBecomeRed.replace(/(<span class="[^"]*">)/g, '$1<span class="psalm-errored-code">');
+
+                        codeToBecomeRed = '<span class="psalm-errored-code">' + codeToBecomeRed + '</span>';
+
+                        env.highlightedCode = env.highlightedCode.replace(magicTagMatch, codeToBecomeRed);
+                    });
+                    function subtractUnmatchedItems(filterType, filterValue) {
+                        var items = document.querySelectorAll('#psalmErrors > li');
+
+                        for (var i = 0; i < items.length; i++) {
+                            var itemTag = items[i].getAttribute('data-' + filterType);
+
+                            if (filterValue !== '' && itemTag !== filterValue) {
+                                items[i].setAttribute('class', 'hidden');
+                            }
+                        }
+                    }
+                    function showAllItems() {
+                        var items = document.querySelectorAll('#psalmErrors > li');
+
+                        for (var i = 0; i < items.length; i++) {
+                            items[i].setAttribute('class', '');
+                        }
+                    }
+                    document.querySelectorAll('.filterable').forEach(function (itemToApplyClickHandlerTo) {
+
+                        var foundItems = [];
+                        var filterType = itemToApplyClickHandlerTo.getAttribute('data-filter-type');
+                        var items = document.querySelectorAll('#psalmErrors > li');
+                        for (var i = 0; i < items.length; i++) {
+                            foundItems.push(items[i].getAttribute('data-' + filterType));
+                        }
+                        foundItems = foundItems.filter(function (value, index, self) {
+                            return self.indexOf(value) === index;
+                        });
+                        for (var i = 0; i < foundItems.length; i++) {
+                            var newOpt = document.createElement('option');
+                            newOpt.value = foundItems[i];
+                            newOpt.innerHTML = foundItems[i];
+                            itemToApplyClickHandlerTo.appendChild(newOpt);
+                        }
+
+                        itemToApplyClickHandlerTo.onclick = function () {
+                            showAllItems();
+                            document.querySelectorAll('.filterable').forEach(function (filteringDropdown) {
+                                subtractUnmatchedItems(
+                                    filteringDropdown.getAttribute('data-filter-type'),
+                                    filteringDropdown.options[filteringDropdown.selectedIndex].value
+                                );
+                            });
+                        };
+                    });
+                
+                </script>
+</body>
+</html>
