@@ -1,10 +1,9 @@
 # Coverage leaking
 
  * `BookingTest`
+   - `vendor/bin/phpunit --coverage-html coverage`
  * Run it, note the coverage leaking `BookingId` and `DateSelection`
+   - file:///home/james/workspace/quality-tutorial/coverage/index.html
  * Enable `@covers` annotation
- * Demonstrate coverage of `private` - extract ID creation into a
-   `private` method for example sake
  * Note, phpunit settings:
-    - `beStrictAboutTestsThatDoNotTestAnything`
-    - `beStrictAboutCoversAnnotation`
+    - `forceCoversAnnotation="true"` - does not generate coverage unless @covers specified

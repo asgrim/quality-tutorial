@@ -16,7 +16,7 @@ use Ramsey\Uuid\Uuid;
 
 /**
  * Intentionally broken annotation:
- * @covers \Asgrim\Domain\Booking\Booking
+ * covers \Asgrim\Domain\Booking\Booking
  */
 final class BookingTest extends TestCase
 {
