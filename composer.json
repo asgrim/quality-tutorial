@@ -12,12 +12,12 @@
     "require": {
         "php": "^7.2",
         "ext-json": "*",
-        "ext-xdebug": "*",
         "beberlei/assert": "^3.2",
         "ramsey/uuid": "^3.8",
         "symfony/process": "^4.3"
     },
     "require-dev": {
+        "ext-xdebug": "*",
         "behat/behat": "^3.5",
         "behat/mink": "^1.7",
         "behat/mink-extension": "^2.3",
