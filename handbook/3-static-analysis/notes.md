@@ -8,8 +8,13 @@
    * types mismatch (int/string)
  - vendor/bin/phpstan analyse --level 7 exercises/4-phpstan
    * possibly null
+   
+# Psalm also, my preferred tool
+
+ - 
 
 # Recommendations
 
  - PHP Inspections (EA Extended)
- - Add `phpstan` to CI (after fixing the issues!)
+ - Add `phpstan` or Psalm to CI (after fixing the issues!)
+ - Baselining (e.g. with Psalm)
