@@ -5,11 +5,12 @@ web: vendor/bin/heroku-php-apache2 public/
 ```
 
  - Register for Heroku (if not already)
+ - Make a new branch `git checkout heroku"
  - Copy `Procfile` to root, commit
  - What is the Procfile?
    - `worker: php worker.php`
  - `heroku login` then `heroku create`
- - `git push heroku master` = deploy
+ - `git push heroku heroku:master` = deploy
 
 ## Other bits
  - PHP extensions as deps in `composer.json`
