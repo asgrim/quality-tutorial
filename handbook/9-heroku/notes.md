@@ -18,6 +18,3 @@ web: vendor/bin/heroku-php-apache2 public/
  - Addons - https://elements.heroku.com/addons (DB, MQ, Redis etc.)
  - Migrations? https://devcenter.heroku.com/articles/release-phase
    - `release: ./test.sh`
-   - Note: this fails - why?
-   - Warning: use transactions
- - Not perfect; but VERY easy to get going

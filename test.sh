@@ -2,4 +2,6 @@
 
 set -xeuo pipefail
 
-echo "<strong>woo</strong>" > public/test.html
+# Note: can't do FS writes here, since "container" is not persistent
+
+echo "Running some kind of migrations!!!"
