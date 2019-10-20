@@ -17,6 +17,18 @@ Requirements:
 
  * Copy the folder, hopefully everything will work for you! :)
 
+## Using the Dockerfile
+
+If you don't have a suitable PHP environment set up, you can try the Dockerfile:
+
+**NOTE** I have not tested this thoroughly, so YMMV... proceed with caution AT YOUR OWN RISK!!
+
+ * `docker build -t quality .`
+ * `docker run --rm -v $(pwd):/app -it quality php -v` - test it works
+ * `docker run --rm -v $(pwd):/app -it quality bash` - open a shell "inside" the container
+ * inside container: `rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini` (removes xdebug)
+ * inside container: `docker-php-ext-enable xdebug` (adds xdebug)
+
 # php\[world\] Training (8h)
 
  - 09:00 : Intro - 15m
