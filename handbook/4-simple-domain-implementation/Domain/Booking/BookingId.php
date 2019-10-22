@@ -15,10 +15,10 @@ final class BookingId
     {
     }
 
-    public static function fromString(string $roomId) : self
+    public static function fromString(string $bookingId) : self
     {
         $instance = new self();
-        $instance->id = Uuid::fromString($roomId);
+        $instance->id = Uuid::fromString($bookingId);
         return $instance;
     }
 
